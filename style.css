@@ -1,3 +1,4 @@
+
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
@@ -16,6 +17,8 @@ body, html {
 .container {
   text-align: center;
   animation: fadeInScale 1s ease forwards;
+  position: relative;
+  display: inline-block;
 }
 
 .main-text {
@@ -39,6 +42,24 @@ body, html {
   font-weight: 400;
   opacity: 0.8;
   animation: fadeIn 2s 0.5s ease forwards;
+  margin-bottom: 10px;
+}
+
+.telegram-link {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-decoration: none;
+  margin-left: 20px;
+  vertical-align: middle;
+  animation: fadeIn 2.5s 1s ease forwards;
+  transition: color 0.3s ease;
+}
+
+.telegram-link:hover {
+  color: #1b40c5;
+  text-decoration: underline;
 }
 
 /* Анимации */
@@ -76,7 +97,7 @@ body, html {
     opacity: 0;
   }
   to {
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 
@@ -90,4 +111,4 @@ body, html {
   40%, 80% {
     transform: translateX(10px);
   }
-    }
+  }
