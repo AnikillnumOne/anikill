@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/main/",
+      "destination": "/title/",
       "permanent": true
     }
   ]
