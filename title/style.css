@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  animation: fadeInScale 1s ease forwards;
+  position: relative;
+  display: inline-block;
+}
+
+#main-text {
+  color: #d62828;
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+  position: relative;
+  animation: bounceIn 1.2s ease forwards;
+  cursor: pointer;
+}
+
+#main-text:hover {
+  animation: shake 0.8s;
+  color: #f94144;
+}
+
+#sub-text {
+  color: #222;
+  font-size: 1.2em;
+  font-weight: 400;
+  opacity: 0.8;
+  animation: fadeIn 2s 0.5s ease forwards;
+  margin-bottom: 10px;
+}
+
+#telegram-link {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-decoration: none;
+  margin-left: 20px;
+  vertical-align: middle;
+  animation: fadeIn 2.5s 1s ease forwards;
+  transition: color 0.3s ease;
+}
+
+#telegram-link:hover {
+  color: #1b40c5;
+  text-decoration: underline;
+}
+
+/* Анимации */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.05);
+  }
+  80% {
+    transform: translateY(-5px) scale(0.95);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-10px);
+  }
+  40%, 80% {
+    transform: translateX(10px);
+  }
+  }
