@@ -60,6 +60,14 @@ body, html {
   text-decoration: underline;
 }
 
+button {
+  background-color: #d62828;
+  color: black;
+  position: relative;
+  top: 10px;
+  font-size: 24px
+}
+
 /* Анимации */
 @keyframes fadeInScale {
   0% {
