@@ -117,3 +117,8 @@ button {
     transform: translateX(10px);
   }
   }
+
+/*Адаптация*/
+@media (max-width: 999px) {
+  
+}
