@@ -13,9 +13,8 @@ body, html {
 
 .container {
   text-align: center;
-  animation: fadeInScale 1s ease forwards;
-  position: relative;
-  display: inline-block;
+  animation: fadeAndScale 1s ease forwards;
+  display: inline-block
 }
 
 #main-text {
@@ -23,14 +22,18 @@ body, html {
   font-weight: 700;
   font-size: 3em;
   margin-bottom: 0.3em;
-  position: relative;
-  animation: bounceIn 1.2s ease forwards;
   cursor: pointer;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.main-text-anim {
+  animation: bounce 1.2s ease;
 }
 
 #main-text:hover {
   animation: shake 0.8s;
-  color: #f94144;
+  color: #f94144
 }
 
 #sub-text {
@@ -38,7 +41,6 @@ body, html {
   font-size: 1.2em;
   font-weight: 400;
   opacity: 0.8;
-  animation: fadeIn 2s 0.5s ease forwards;
   margin-bottom: 10px;
 }
 
@@ -50,7 +52,6 @@ body, html {
   text-decoration: none;
   margin-left: 20px;
   vertical-align: middle;
-  animation: fadeIn 2.5s 1s ease forwards;
   transition: color 0.3s ease;
 }
 
@@ -76,40 +77,35 @@ button {
 }
 
 /* Анимации */
-@keyframes fadeInScale {
-  0% {
+@keyframes fadeAndScale {
+  from {
     opacity: 0;
     transform: scale(0.8);
   }
-  100% {
+
+  to {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-@keyframes bounceIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px) scale(0.5);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(10px) scale(1.05);
-  }
-  80% {
-    transform: translateY(-5px) scale(0.95);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes fadeIn {
+@keyframes bounce {
   from {
     opacity: 0;
+    transform: translateY(-50px) scale(0.5)
   }
-  to {
+
+  60% {
     opacity: 1;
+    transform: translateY(10px) scale(1.05)
+  }
+
+  80% {
+    transform: translateY(-5px) scale(0.95)
+  }
+
+  to {
+    transform: translateY(0) scale(1)
   }
 }
 
@@ -123,9 +119,4 @@ button {
   40%, 80% {
     transform: translateX(10px);
   }
-  }
-
-/*Адаптация*/
-@media (max-width: 999px) {
-  
 }
