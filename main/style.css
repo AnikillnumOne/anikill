@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #d62828
+}
+
+.mainContainer {
+    animation: grow 1s ease forwards;
+    text-align: center
+}
+
+#left {
+    width: 75px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer
+}
+
+/*Анимации*/
+@keyframes grow {
+    from {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+/*Адаптация под телефоны*/
+@media (max-width: 1000px) {
+    #left {
+        width: 35px;
+        height: 20px
+    }
+}
