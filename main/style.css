@@ -12,6 +12,7 @@ body, html {
 }
 
 #left {
+    margin: 0;
     width: 75px;
     height: 50px;
     position: absolute;
@@ -36,7 +37,7 @@ body, html {
 /*Адаптация под телефоны*/
 @media (max-width: 1000px) {
     #left {
-        width: 55px;
-        height: 45px
+        width: 40px;
+        height: 32px
     }
 }
