@@ -1,3 +1,3 @@
 function back() {
-    window.location.href = "/guides/html.main"
+    window.location.href = "/guides/html/main"
 }
