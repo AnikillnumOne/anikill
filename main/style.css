@@ -68,4 +68,7 @@ a:hover {
         width: 40px;
         height: 32px
     }
+    #border {
+        display: none
+    }
 }
