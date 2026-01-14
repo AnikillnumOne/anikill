@@ -6,6 +6,10 @@ body, html {
     color: #d62828
 }
 
+h3 {
+    color: black
+}
+
 .mainContainer {
     animation: grow 1s ease forwards;
     text-align: center
@@ -19,6 +23,30 @@ body, html {
     left: 0;
     top: 0;
     cursor: pointer
+}
+
+.guides {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    margin-right: 15px;
+    width: 20%
+}
+
+#border {
+    background-color: black;
+    width: 5px;
+    position: absolute;
+    left: 20%;
+    margin: 0
+}
+
+li::marker {
+    color: black
+}
+
+a:hover {
+    color: red
 }
 
 /*Анимации*/
