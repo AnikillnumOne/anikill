@@ -14,15 +14,19 @@ h3 {
     text-align: center
 }
 
+header {
+    animation: grow 1s ease forwards;
+    text-align: center
+}
+
 main {
     animation: grow 1s ease forwards;
     display: flex;
     justify-content: space-around
 }
 
-header {
-    animation: grow 1s ease forwards;
-    text-align: center
+footer {
+    animation: grow 1s ease forwards
 }
 
 #left {
