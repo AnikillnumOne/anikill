@@ -70,7 +70,6 @@ button {
     border: none; 
     border-radius: 8px; 
     cursor: pointer;
-    text-decoration: none;
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3)
 }

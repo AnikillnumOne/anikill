@@ -1,46 +1,55 @@
 body {
     background-color: rgb(26, 26, 29);
     color: white;
-    font-family: Tahoma
+    font-family: Tahoma;
 }
 
 h1 {
     text-align: center;
-    font-size: 30px
+    font-size: 30px;
 }
 
 button {
-    font-size: 26px
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer
+}
+
+button:hover {
+    color: rgb(80, 80, 92)
+}
+
+.lessons {
+    display: flex;
+    flex-direction: column
 }
 
 p {
-    font-size: 24px
+    font-size: 24px;
 }
 
 a {
-    font-size: 24px
+    font-size: 24px;
 }
 
 a:hover {
-    color: red
+    color: red;
 }
 
 /*Адаптация под телефоны*/
 @media (max-width: 999px) {
-    button {
-        font-size: 23px
-    }
-
-
     h1 {
-        font-size: 25px
+        font-size: 25px;
     }
 
     p {
-        font-size: 23px
+        font-size: 23px;
     }
 
     a {
-        font-size: 23px
+        font-size: 23px;
     }
 }

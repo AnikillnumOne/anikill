@@ -29,7 +29,7 @@ footer {
     animation: grow 1s ease forwards
 }
 
-#left {
+#back {
     margin: 0;
     width: 55px;
     height: 40px;
@@ -73,7 +73,7 @@ a:hover {
 
 /*Адаптация под телефоны*/
 @media (max-width: 1000px) {
-    #left {
+    #back {
         width: 40px;
         height: 32px
     }
