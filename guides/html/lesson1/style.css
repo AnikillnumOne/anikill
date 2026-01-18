@@ -1,76 +1,58 @@
 body {
     background-color: rgb(26, 26, 29);
     color: white;
-    font-family: Tahoma
+    font-family: Tahoma;
 }
 
 button {
-    display: inline-block; 
-    padding: 12px 25px;
-    font-size: 1.1em; 
-    font-weight: bold;
-    color: #ffffff; 
-    background-color: #dc3545; 
-    border: none; 
-    border-radius: 8px; 
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
     cursor: pointer;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3)
+    position: absolute;
 }
 
 button:hover {
-  background-color: #e64a5a;
-  color: rgb(165, 131, 131)
+    color: rgb(80, 80, 92);
 }
 
 h1 {
-    text-align: center
+    text-align: center;
+    font-size: 30px;
 }
 
 h2 {
-    text-align: center
+    text-align: center;
+    font-size: 27px;
 }
 
-@media (min-width: 1000px) {
-    button {
-        font-size: 26px
-    }
+p {
+    font-size: 22px;
+}
 
-    h1 {
-        font-size: 30px
-    }
-
-    h2 {
-        font-size: 27px
-    }
-
-    p {
-        font-size: 22px
-    }
-
-    pre {
-        font-size: 25px
-    }
+pre {
+    font-size: 25px;
 }
 
 @media (max-width: 999px) {
     button {
-        font-size: 23px
+        position: relative;
     }
 
     h1 {
-        font-size: 25px
+        font-size: 25px;
     }
 
     h2 {
-        font-size: 23px
+        font-size: 23px;
     }
 
     p {
-        font-size: 18px
+        font-size: 18px;
     }
 
     pre {
-        font-size: 21px
+        font-size: 21px;
     }
 }
