@@ -1,5 +1,5 @@
 if (localStorage.getItem("isRemove")) {
-    body.remove()
+    document.body.remove()
 }
 
 // Переход на главную
@@ -15,6 +15,6 @@ text.addEventListener("animationend", () => {
 })
 
 function snos() {
-    body.remove()
+    document.body.remove()
     localstorage.setItem("isRemove", true)
 }
