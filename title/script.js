@@ -1,6 +1,6 @@
 if (localStorage.getItem("isRemove") == "true") {
     document.body.remove();
-    document.documentElement.background = "repeat";
+    document.documentElement.style.background = "repeat";
     const element = document.createElement("p");
     element.innerHTML = "Сайт снесён";
     document.documentElement.appendChild(element);
@@ -20,7 +20,7 @@ text.addEventListener("animationend", () => {
 
 function snos() {
     document.body.remove();
-    document.documentElement.background = "repeat";
+    document.documentElement.style.background = "repeat";
     const element = document.createElement("p");
     element.innerHTML = "Сайт снесён";
     document.documentElement.appendChild(element);
