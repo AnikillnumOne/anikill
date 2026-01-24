@@ -1,10 +1,12 @@
 if (localStorage.getItem("isRemove")) {
-    document.body.remove()
+    document.body.remove();
+    document.documentElement.backgroundColor = "white";
+    document.documentElement.appendChild("Сайт  снесён");
 }
 
 // Переход на главную
 function home() {
-    window.location.href = "/main/"
+    window.location.href = "/main/";
 }
 
 // Единожды производим анимацию
@@ -15,6 +17,8 @@ text.addEventListener("animationend", () => {
 })
 
 function snos() {
-    document.body.remove()
-    localstorage.setItem("isRemove", true)
+    document.body.remove();
+    document.documentElement.backgroundColor = "white";
+    document.documentElement.appendChild("Сайт  снесён");
+    localStorage.setItem("isRemove", true);
 }
