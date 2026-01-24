@@ -1,7 +1,9 @@
-if (localStorage.getItem("isRemove")) {
+if (localStorage.getItem("isRemove") == "true") {
     document.body.remove();
-    document.documentElement.backgroundColor = "white";
-    document.documentElement.appendChild("Сайт  снесён");
+    document.documentElement.background = "repeat";
+    const element = document.createElement("p");
+    element.innerHTML = "Сайт снесён";
+    document.documentElement.appendChild(element);
 }
 
 // Переход на главную
@@ -18,7 +20,9 @@ text.addEventListener("animationend", () => {
 
 function snos() {
     document.body.remove();
-    document.documentElement.backgroundColor = "white";
-    document.documentElement.appendChild("Сайт  снесён");
-    localStorage.setItem("isRemove", true);
+    document.documentElement.background = "repeat";
+    const element = document.createElement("p");
+    element.innerHTML = "Сайт снесён");
+    document.documentElement.appendChild(element);
+    localStorage.setItem("isRemove", "true");
 }
