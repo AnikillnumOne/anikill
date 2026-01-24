@@ -1,3 +1,7 @@
+if (localStorage.getItem("isRemove")) {
+    body.remove()
+}
+
 // Переход на главную
 function home() {
     window.location.href = "/main/"
@@ -9,3 +13,8 @@ text.classList.add("main-text-anim")
 text.addEventListener("animationend", () => {
     text.classList.remove("main-text-anim")
 })
+
+function snos() {
+    body.remove()
+    localstorage.setItem("isRemove", true)
+}
