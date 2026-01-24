@@ -22,7 +22,7 @@ function snos() {
     document.body.remove();
     document.documentElement.background = "repeat";
     const element = document.createElement("p");
-    element.innerHTML = "Сайт снесён");
+    element.innerHTML = "Сайт снесён";
     document.documentElement.appendChild(element);
     localStorage.setItem("isRemove", "true");
 }
